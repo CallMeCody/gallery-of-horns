@@ -1,17 +1,72 @@
-.animalsTemplate {
-  position: relative;
-  overflow: auto;
-  width: 100%;
-  display: flexbox;
-  outline: 3px red dotted;
-  justify-content: center;
+
+/* TODO:
+
+How are we implementing it?
+1. Style your application using floats.
+2 . Utilize at least one Google font. 
+
+*/
+*{
+  background-color: honeydew;
 }
-.animals {
-  outline: 3px black dashed;
+
+
+header, div {
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+h1{
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 72px;
+  text-align: center;
+}
+
+main {  /* this is the container */
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  outline: fuchsia 2px solid;
+  justify-content: space-evenly;
+  position: relative;
+  /* align-items: baseline; */
+}
+
+
+section {
+  /* outline: dotted 10px greenyellow; */
+  /* background-color: hotpink; */
+  align-items: center;
+  /* flex-grow: 4; */
+  align-self: center;
+  margin-bottom: 20px;
+
+}
+
+.animalsTemplate {
+  width: auto;
+  display: flex;
+  /* outline: 3px red dotted; */
+ 
+
+}
+
+.animals {
+  /* outline: 3px black dashed;
+  outline: fuchsia 2px solid; */
+}
+
+section > h2 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bolder;
+  font-size: xx-large;
 }
 img {
   height: 200px;
-  float: left;
+  
+}
+
+p {
+  font-family: 'Amatic SC', cursive;
+  
 }
